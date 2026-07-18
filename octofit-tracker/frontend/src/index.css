@@ -1,0 +1,36 @@
+:root {
+  color: #102320;
+  background:
+    radial-gradient(circle at top, rgba(250, 184, 76, 0.32), transparent 28%),
+    linear-gradient(180deg, #f5f1e8 0%, #eef4ef 52%, #f9fbf7 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}

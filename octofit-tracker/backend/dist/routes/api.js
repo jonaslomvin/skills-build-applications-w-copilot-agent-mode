@@ -1,0 +1,15 @@
+import { Router } from 'express';
+import activitiesRouter from './activities.js';
+import healthRouter from './health.js';
+import leaderboardRouter from './leaderboard.js';
+import teamsRouter from './teams.js';
+import usersRouter from './users.js';
+import workoutsRouter from './workouts.js';
+const apiRouter = Router();
+apiRouter.use('/health', healthRouter);
+apiRouter.use('/users', usersRouter);
+apiRouter.use('/teams', teamsRouter);
+apiRouter.use('/activities', activitiesRouter);
+apiRouter.use('/workouts', workoutsRouter);
+apiRouter.use('/leaderboard', leaderboardRouter);
+export default apiRouter;
