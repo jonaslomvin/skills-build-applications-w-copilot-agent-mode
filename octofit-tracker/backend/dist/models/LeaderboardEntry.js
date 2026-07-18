@@ -1,4 +1,4 @@
-import { model, models, Schema } from 'mongoose';
+import mongoose, { model, Schema } from 'mongoose';
 const leaderboardEntrySchema = new Schema({
     scope: {
         type: String,
@@ -33,4 +33,4 @@ const leaderboardEntrySchema = new Schema({
 }, {
     timestamps: true,
 });
-export const LeaderboardEntry = models.LeaderboardEntry || model('LeaderboardEntry', leaderboardEntrySchema);
+export const LeaderboardEntry = mongoose.models.LeaderboardEntry || model('LeaderboardEntry', leaderboardEntrySchema);

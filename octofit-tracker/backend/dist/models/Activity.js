@@ -1,4 +1,4 @@
-import { model, models, Schema } from 'mongoose';
+import mongoose, { model, Schema } from 'mongoose';
 const activitySchema = new Schema({
     userId: {
         type: Schema.Types.ObjectId,
@@ -37,4 +37,4 @@ const activitySchema = new Schema({
 }, {
     timestamps: true,
 });
-export const Activity = models.Activity || model('Activity', activitySchema);
+export const Activity = mongoose.models.Activity || model('Activity', activitySchema);

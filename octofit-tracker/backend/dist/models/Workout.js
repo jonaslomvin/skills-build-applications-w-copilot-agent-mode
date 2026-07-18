@@ -1,4 +1,4 @@
-import { model, models, Schema } from 'mongoose';
+import mongoose, { model, Schema } from 'mongoose';
 const workoutSchema = new Schema({
     title: {
         type: String,
@@ -31,4 +31,4 @@ const workoutSchema = new Schema({
 }, {
     timestamps: true,
 });
-export const Workout = models.Workout || model('Workout', workoutSchema);
+export const Workout = mongoose.models.Workout || model('Workout', workoutSchema);
